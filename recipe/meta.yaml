@@ -14,16 +14,10 @@ source:
     - {{ cran_mirror }}/src/contrib/Archive/fracdiff/fracdiff_{{ version }}.tar.gz
   sha256: 983781cedc2b4e3ba9fa020213957d5133ae9cd6710bc61d6225728e2f6e850e
 
-
-  # patches:
-   # List any patch files here
-   # - fix.patch
-
 build:
   merge_build_host: True  # [win]
   # If this is a new build for the same version, increment the build number.
   number: 4
-
 
   # This is required to make R link correctly on Linux.
   rpaths:
